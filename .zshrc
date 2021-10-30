@@ -81,6 +81,7 @@ plugins=(
 	zsh-syntax-highlighting
 	git
 	colored-man-pages
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
