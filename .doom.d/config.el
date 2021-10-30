@@ -132,3 +132,6 @@
 
 ;; markdown compile
 '(+markdown-compile-pandoc)
+
+;; keychain-env
+(keychain-refresh-environment)
