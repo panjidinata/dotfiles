@@ -46,8 +46,10 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents")
+(setq org-agenda-files '("~/Documents/Agenda/daily.org"))
 (setq org-roam-directory (file-truename "~/Documents/catatan"))
 (org-roam-db-autosync-mode)
+
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
