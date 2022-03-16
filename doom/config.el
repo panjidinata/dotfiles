@@ -154,8 +154,5 @@
 ;; using pdf-tools
 (setq +latex-viewers '(pdf-tools))
 
-;; markdown compile
-'(+markdown-compile-pandoc)
-
 ;; keychain-env
 (keychain-refresh-environment)
