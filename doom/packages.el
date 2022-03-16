@@ -49,14 +49,6 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
-(package! gitconfig-mode
-  :recipe (:host github :repo "magit/git-modes"
-           :files ("gitconfig-mode.el")))
-
-(package! gitignore-mode
-  :recipe (:host github :repo "magit/git-modes"
-           :files ("gitignore-mode.el")))
-
 (package! keychain-environment
   :recipe (:host github :repo "tarsius/keychain-environment"
            :files ("keychain-environment.el")))
