@@ -47,9 +47,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents")
 (setq org-agenda-files '("~/Documents/Agenda/daily.org"))
-(setq org-roam-directory (file-truename "~/Documents/catatan"))
-(org-roam-db-autosync-mode)
-
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -71,6 +68,31 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; org roam config
+(use-package! org-roam
+  ;; :ensure t
+  :custom
+  (org-roam-directory "~/Documents/Roam")
+  (org-roam-complete-everywhere t)
+  (org-roam-capture-templates
+   '(("d" "default" plain
+      "%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+     ("b" "book notes" plain
+      "\n* Source\n\nAuthor: %^{Author}\n\nTitle: ${title}\nYear: %^{Year}\n\n* Summary\n\n%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+     )
+   )
+  :config
+  (org-roam-setup)
+)
+
+(after! org-roam
+  (org-roam-db-autosync-mode)
+)
 
 ;; modeline custom setting
 ;; Whether display icons in the mode-line.
