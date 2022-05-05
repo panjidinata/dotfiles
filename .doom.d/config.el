@@ -134,25 +134,36 @@
 ;; displaying symlink file real name
 (setq find-file-visit-truename t)
 
-;; centaur tab custom setting
-;; tab style
-(setq centaur-tabs-style 'chamfer)
+;; ;; centaur tab custom setting
+;; ;; tab style
+;; (setq centaur-tabs-style 'chamfer)
 
-;; tab use icon
-(setq centaur-tabs-set-icons t)
+;; ;; tab use icon
+;; (setq centaur-tabs-set-icons t)
 
-;; graying unselected tabs
-(setq centaur-tabs-gray-out-icons 'buffer)
+;; ;; graying unselected tabs
+;; (setq centaur-tabs-gray-out-icons 'buffer)
 
-;; change tabs close button
-(setq centaur-tabs-close-button "X")
+;; ;; change tabs close button
+;; (setq centaur-tabs-close-button "X")
 
-;; keybinding for vim like tab changing
-(define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
-(define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
+;; ;; keybinding for vim like tab changing
+;; (define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
+;; (define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
 
 ;; using pdf-tools
 (setq +latex-viewers '(pdf-tools))
 
 ;; keychain-env
 (keychain-refresh-environment)
+
+;; extra configuration for ipython and jupyter
+(setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
+(setq +python-jupyter-repl-args '("--simple-prompt"))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+  (rust . t)
+  (python . t)
+  (jupyter . t)))
