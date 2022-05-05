@@ -52,3 +52,7 @@
 (package! keychain-environment
   :recipe (:host github :repo "tarsius/keychain-environment"
            :files ("keychain-environment.el")))
+
+(package! smart-compile
+  :recipe (:host github :repo "zenitani/elisp"
+           :files ("smart-compile.el")))
