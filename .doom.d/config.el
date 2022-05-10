@@ -166,4 +166,7 @@
  '((emacs-lisp . t)
   (rust . t)
   (python . t)
-  (jupyter . t)))
+  (jupyter . t)
+  (mermaid . t)))
+
+(setq ob-mermaid-cli-path "~/Projects/makeDiagramHere/node_modules/.bin/mmdc")

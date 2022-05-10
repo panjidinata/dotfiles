@@ -56,3 +56,5 @@
 (package! smart-compile
   :recipe (:host github :repo "zenitani/elisp"
            :files ("smart-compile.el")))
+
+(package! ob-mermaid)
