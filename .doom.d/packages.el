@@ -49,12 +49,8 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
-(package! keychain-environment
-  :recipe (:host github :repo "tarsius/keychain-environment"
-           :files ("keychain-environment.el")))
+(package! keychain-environment)
 
-(package! smart-compile
-  :recipe (:host github :repo "zenitani/elisp"
-           :files ("smart-compile.el")))
+(package! smart-compile)
 
 (package! ob-mermaid)
