@@ -170,3 +170,20 @@
   (mermaid . t)))
 
 (setq ob-mermaid-cli-path "~/Projects/makeDiagramHere/node_modules/.bin/mmdc")
+
+(use-package! python
+  :custom
+  (python-shell-interpreter "python3")
+  :config
+  )
+
+(use-package! lsp-pyright
+  :hook
+  (python-mode . (lambda ()
+                   (require 'lsp-pyright)
+                   (lsp-deferred)))
+  :init
+  (when (executable-find "python3")
+          (setq lsp-pyright-python-executable-cmd "python3"))
+  :config
+  )
