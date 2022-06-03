@@ -102,6 +102,8 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library
 export PATH="$HOME/.cargo/bin:$PATH"
 
+SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
