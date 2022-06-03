@@ -165,16 +165,11 @@
 ;; keychain-env
 (keychain-refresh-environment)
 
-;; extra configuration for ipython and jupyter
-(setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
-(setq +python-jupyter-repl-args '("--simple-prompt"))
-
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((emacs-lisp . t)
   (rust . t)
   (python . t)
-  (jupyter . t)
   (mermaid . t)))
 
 (setq ob-mermaid-cli-path "~/Projects/makeDiagramHere/node_modules/.bin/mmdc")
