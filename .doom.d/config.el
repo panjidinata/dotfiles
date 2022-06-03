@@ -81,14 +81,22 @@
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
       :unnarrowed t)
      ("b" "book notes" plain
-      "\n* Source\n\nAuthor: %^{Author}\n\nTitle: ${title}\nYear: %^{Year}\n\n* Summary\n\n%?"
+      (file "~/Documents/Roam/Templates/BookNotesTemplate.org")
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+     ("p" "project" plain
+      "* Goals\n\n%?\n\n* Task \n\n** TODO initial task\n\n* Dates\n\n"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: Project")
       :unnarrowed t)
      )
    )
   :config
   (org-roam-setup)
 )
+
+(setq org-roam-node-display-template
+      (concat "${title:*} "
+              (propertize "${tags:30}" 'face 'org-tag)))
 
 (after! org-roam
   (org-roam-db-autosync-mode)
