@@ -136,7 +136,7 @@
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
        json              ; At least it ain't XML
-       (java +meghanada) ; the poster child for carpal tunnel syndrome
+       ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
        (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
@@ -148,8 +148,8 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +pandoc +pretty +roam2 +jupyter)               ; organize your plain life in plain text
-       (php +lsp)               ; perl's insecure younger brother
+       (org +pretty +roam2)               ; organize your plain life in plain text
+       ;;(php +lsp)                 ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        (python +lsp +pyright +conda)            ; beautiful is better than ugly
