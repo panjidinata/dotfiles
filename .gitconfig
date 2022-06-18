@@ -1,0 +1,8 @@
+[core]
+	autocrlf = false
+	safecrlf = true
+[color]
+	status = always
+[user]
+	email = panjidinata88@gmail.com
+	name = Panji Dinata
