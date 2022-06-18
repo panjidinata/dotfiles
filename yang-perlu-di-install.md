@@ -55,3 +55,8 @@
 *Database*
  - MariaBD 
  - SQLite
+*Font*
+ - Iosevka
+ - FiraCode Nerd Font
+ - Overpass
+ - Source Code Pro
