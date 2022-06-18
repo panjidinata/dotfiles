@@ -4,10 +4,9 @@
  - fd
  - exa
  - bat
- - keychain
  - optimus manager
 *terminal*
- - zsh
+ - fish
  - starship promt
 *Office*
  - onlyoffice
