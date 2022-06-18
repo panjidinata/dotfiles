@@ -84,9 +84,13 @@
       (file "~/Documents/Roam/Templates/BookNotesTemplate.org")
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
       :unnarrowed t)
-     ("p" "project" plain
-      "* Goals\n\n%?\n\n* Task \n\n** TODO initial task\n\n* Dates\n\n"
+     ("p" "project notes" plain
+      (file "~/Documents/Roam/Templates/ProjectNotesTemplate.org")
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: Project")
+      :unnarrowed t)
+     ("s" "story writing" plain
+      "%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: Story Writing")
       :unnarrowed t)
      )
    )
