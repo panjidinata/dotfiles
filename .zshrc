@@ -102,8 +102,6 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library
 export PATH="$HOME/.cargo/bin:$PATH"
 
-SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -127,7 +125,6 @@ SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ytdl="youtube-dl"
-alias weka="~/weka-3-8-5/weka.sh"
 alias ssh2github="keychain id_ed25519_github"
 
 export NVM_DIR="$HOME/.nvm"
